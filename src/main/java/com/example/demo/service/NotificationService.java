@@ -9,6 +9,6 @@ public class NotificationService {
     public String sendEmail(User user, String message) {
         if (user.getEmail() == null || user.getEmail().isEmpty())
             return "Invalid email";
-        return "Email sent asap to " + user.getEmail() + " with message: " + message;
+        return "Email sent to " + user.getEmail() + " with message: " + message;
     }
 }
