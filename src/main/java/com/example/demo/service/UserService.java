@@ -7,7 +7,7 @@ import java.util.*;
 
 @Service
 public class UserService {
-    private final Map<String, User> userStore = new HashMap<>();
+    private Map<String, User> userStore = new HashMap<>();
 
     public void addUser(User user)          { userStore.put(user.getId(), user); }
     public User getUserById(String id)      { return userStore.get(id); }
